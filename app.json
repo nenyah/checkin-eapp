@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/stats/stats"
+  ],
+  "window": {
+    "defaultTitle": "华东宁波签到系统"
+  },
+  "tabBar": {
+    "textColor": "#777777",
+    "selectedColor": "#3296fa",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "签到",
+        "icon": "assets/images/icon_signin_line.png",
+        "activeIcon": "assets/images/icon_signin_line_active.png"
+      },
+      {
+        "pagePath": "pages/stats/stats",
+        "name": "统计",
+        "icon": "assets/images/icon_statistics.png",
+        "activeIcon": "assets/images/icon_statistics_active.png"
+      }
+    ]
+  }
+}

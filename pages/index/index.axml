@@ -1,0 +1,8 @@
+<view>
+  日期，企业
+</view>
+<view class="">
+      <dingui-button type="primary" onDmCatchTap="onDmTap" className="dingui-button-default">查看位置</dingui-button>
+    </view>
+<view>
+</view>
