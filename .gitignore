@@ -1,4 +1,19 @@
-.tea
+.DS_Store
 node_modules
+.tea
+.svn
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# Editor directories and files
+.idea
 .vscode
-.git
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
