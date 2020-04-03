@@ -1,9 +1,7 @@
 Component({
   mixins: [],
   data: {},
-  props: {
-    today:"2020年04月01日"
-  },
+  props: {},
   didMount() {},
   didUpdate() {},
   didUnmount() {},

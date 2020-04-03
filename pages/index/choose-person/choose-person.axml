@@ -1,0 +1,5 @@
+<view class="flex bg-color-white">
+  <text class="text-xl w-1-4 my-4">拜访对象</text>
+  <input class="p-4" type="text" placeholder="请选择或者输入"/>
+  <view class="fa fa-address-book-o fa-2x color-primary my-4" aria-hidden="true"></view>
+</view>

@@ -1,9 +1,15 @@
 Component({
   mixins: [],
-  data: {},
+  data: {
+    ctime:"13:59"
+  },
   props: {},
-  didMount() {},
+  didMount() {
+  },
   didUpdate() {},
   didUnmount() {},
-  methods: {},
+  methods: {
+    
+  },
+  
 });

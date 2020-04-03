@@ -1,7 +1,6 @@
+<!--时间公司提示-->
 <s-header/>
-<view class="map">
-  <!-- <dingui-button type="primary" onDmCatchTap="onDmTap" className="dingui-button-default">查看位置</dingui-button> -->
-</view>
-<view class="select-person">
-</view>
+<!--选择人员-->
+<s-choose-person/>
+<!--签到-->
 <s-check/>

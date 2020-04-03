@@ -1,8 +1,8 @@
 {
     "component": true,
     "usingComponents": {
-        "dingui-button": "dingui-mini/es/button/src/index",
         "s-check":"./check-icon/check-icon",
-        "s-header":"./check-header/check-header"
+        "s-header":"./check-header/check-header",
+        "s-choose-person": "./choose-person/choose-person"
     }
 }

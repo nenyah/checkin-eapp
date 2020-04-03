@@ -1,5 +1,12 @@
-<view class="header">
-<view class="fa fa-clock-o"></view>
-  <view class="today">2020年04月01日</view>
+<view class="header flex color-label bg-color-white">
+  <view
+    class="fa fa-clock-o mx-1"
+    aria-hidden="true"
+  ></view>
+  <view class="today mr-3">{{today}}</view>
+  <view
+    class="fa fa-sitemap mx-1"
+    aria-hidden="true"
+  ></view>
   <view class="company">当前企业：华东宁波医药有限公司</view>
 </view>
