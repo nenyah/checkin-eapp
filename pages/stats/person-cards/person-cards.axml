@@ -1,0 +1,21 @@
+<view>
+  <view class="">
+    <view class="">士明</view>
+    <view class="">
+      <view class="">
+        陈士明
+      </view>
+      <view class="">
+        08:58 今日已签到1次
+      </view>
+    </view>
+  </view>
+  <view class="">
+    <view class="">签到地点</view>
+    <view class="">
+    宁波市公安局北仑分局交通警察大队
+    </view>
+    <view class="">签到图片</view>
+    <image src="/assets/images/fake1.jpg" mode="aspectFill" />
+  </view>
+</view>

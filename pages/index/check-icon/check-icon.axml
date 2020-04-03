@@ -1,10 +1,11 @@
-<view class="container">
-  <view class="check-part">
-    <view class="check-circle">
-      <view class="text">签到</view>
-      <view class="clock">{{ctime}}</view>
+<view class="w-full h-full flex flex-col mt-10 items-center">
+  <view class="w-1-2 h-1-2 flex flex-col items-center">
+    <view class="check-circle bg-color-warning w-48 h-48 circle flex flex-col justify-center items-center">
+      <view class="color-label text-3xl">签到</view>
+      <view class="color-white text-4xl">{{ctime}}</view>
     </view>
+    <view class="mt-5 color-info">今日你还没有签到</view>
   </view>
-  <view>今日你还没有签到</view>
-  <view class="bottom">钉钉只会在你主动签到时获取位置信息</view>
+  
+  <view class="color-label fixed pin-b mb-2">钉钉只会在你主动签到时获取位置信息</view>
 </view>
