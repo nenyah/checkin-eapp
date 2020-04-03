@@ -1,4 +1,4 @@
-<view class="flex bg-color-white">
+<view class="flex bg-color-white shadow">
   <view class="flex flex-row items-center justify-center h-20">
     <text class="text-xl color-big-title font-bold">拜访对象</text>
     <input
