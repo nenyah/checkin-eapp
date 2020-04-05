@@ -1,8 +1,9 @@
 {
     "component": true,
     "usingComponents": {
-        "s-check":"./check-icon/check-icon",
-        "s-header":"./check-header/check-header",
-        "s-choose-person": "./choose-person/choose-person"
+        "s-header": "./check-header/check-header",
+        "s-map": "/component/map/map",
+        "s-choose-person": "./choose-person/choose-person",
+        "s-check": "./check-icon/check-icon"
     }
 }

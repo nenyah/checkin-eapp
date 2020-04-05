@@ -1805,6 +1805,12 @@
   word-wrap: normal;
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* 固定宽度 */
 
 .w-1 {
@@ -1949,6 +1955,14 @@
 
 .bg-color-warning {
   background-color: #ff943e;
+}
+
+.bg-color-notify {
+  background-color: #f6b55b;
+}
+
+.color-notify {
+  color: #f6b55b;
 }
 
 .color-success {
