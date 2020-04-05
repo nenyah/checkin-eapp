@@ -1,7 +1,7 @@
-<view class="flex justify-between items-center w-full px-2 m-auto">
-  <view class="color-big-title text-2xl font-bold">宁波市公安局交通警察</view>
+<view class="flex justify-between items-center w-full px-2 m-auto my-2">
+  <view class="w-4-5 color-big-title text-2xl font-bold no-wrap">宁波市公安局北仑分局交通警察</view>
   <view class="color-primary">地点微调</view>
 </view>
 <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}"
-        show-location style="width: 95%; height: 100px;" class="px-2 m-auto">
+        show-location style="width: 95%; height: 200rpx;" class="px-2 m-auto my-2">
 </map>

@@ -1,9 +1,7 @@
 /* 基础样式 */
 
 @import "./font-awesome.acss";
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: border-box;
 }
 
@@ -1609,8 +1607,7 @@
 }
 
 .shadow-lg {
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
 .shadow-inner {
@@ -1803,12 +1800,6 @@
 
 .break-normal {
   word-wrap: normal;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /* 固定宽度 */
@@ -2013,13 +2004,11 @@
   background-color: rgba(25, 31, 37, 0.72);
 }
 
-.color-title,
-.color-info {
+.color-title, .color-info {
   color: rgba(25, 31, 37, 0.56);
 }
 
-.bg-color-title,
-.bg-color-info {
+.bg-color-title, .bg-color-info {
   background-color: rgba(25, 31, 37, 0.56);
 }
 
@@ -2111,6 +2100,10 @@
 
 .border-none {
   border: none !important;
+}
+
+.sep-line {
+  border-bottom: solid 2rpx #eee;
 }
 
 /* 圆角 */
