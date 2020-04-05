@@ -3,6 +3,7 @@
     "usingComponents": {
         "s-scope": "./scope/scope",
         "s-breif-stats": "./breif-stats/breif-stats",
-        "s-person-cards": "./person-cards/person-cards"
+        "s-person-cards": "./person-cards/person-cards",
+        "s-button": "./export-button/export-button"
     }
 }

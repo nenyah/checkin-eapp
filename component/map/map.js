@@ -5,9 +5,6 @@ const markers = [{
   longitude: 120.131441,
   width: 30,
   height: 30,
-  callout: {
-    content: 'callout',
-  },
 }];
 
 const includePoints = [{
