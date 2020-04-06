@@ -1,57 +1,29 @@
 const itemsMine = [
   {
-    thumbContent: "未激活", extraText: "邬顶立 负责", briefList: [
-      { className: "color-big-title text-xl font-bold", style: "", text: "宁波第一医院-系统测试" },
-      { className: "", style: "", text: "测试内容1" },
-      { className: "radius-2 w-1-2 color-green", style: "", text: "医药机构" }
-    ]
+    thumbContent: "未激活", extraText: "邬顶立 负责", mainTitle: "宁波第一医院-系统测试"
   },
 
 ]
 const itemsShare = [
   {
-    thumbContent: "未激活", extraText: " 李丽 负责", briefList: [
-      { className: "color-big-title text-xl font-bold", style: "", text: "宁波第一医院-系统测试" },
-      { className: "", style: "", text: "测试内容1" },
-      { className: "radius-2 w-1-2 color-green", style: "", text: "医药机构" }
-    ]
+    thumbContent: "未激活", extraText: " 李丽 负责", mainTitle: "宁波第一医院-系统测试"
   },
   {
-    thumbContent: "未激活", extraText: "李丽 负责", briefList: [
-      { className: "color-big-title text-xl font-bold", style: "", text: "宁波第二医院-系统测试" },
-      { className: "", style: "", text: "测试内容2" },
-      { className: "radius-2 w-1-2 color-green", style: "", text: "医美机构" }
-    ]
+    thumbContent: "未激活", extraText: "李丽 负责", mainTitle: "宁波第二医院-系统测试"
   },
   {
-    thumbContent: "未激活", extraText: "李丽 负责", briefList: [
-      { className: "color-big-title text-xl font-bold", style: "", text: "宁波第三医院-系统测试" },
-      { className: "", style: "", text: "测试内容3" },
-      { className: "radius-2 w-1-2 color-green", style: "", text: "胃药机构" }
-    ]
+    thumbContent: "未激活", extraText: "李丽 负责", mainTitle: "宁波第三医院-系统测试"
   },
 ]
 const itemsAll = [
   {
-    thumbContent: "未激活", extraText: " 陈世明 负责", briefList: [
-      { className: "color-big-title text-xl font-bold", style: "", text: "宁波第一医院-系统测试" },
-      { className: "", style: "", text: "测试内容1" },
-      { className: "radius-2 w-1-2 color-green", style: "", text: "医药机构" }
-    ]
+    thumbContent: "未激活", extraText: " 陈世明 负责", mainTitle: "宁波第一医院-系统测试"
   },
   {
-    thumbContent: "未激活", extraText: "陈世明 负责", briefList: [
-      { className: "color-big-title text-xl font-bold", style: "", text: "宁波第二医院-系统测试" },
-      { className: "", style: "", text: "测试内容2" },
-      { className: "radius-2 w-1-2 color-green", style: "", text: "医美机构" }
-    ]
+    thumbContent: "未激活", extraText: "陈世明 负责", mainTitle: "宁波第二医院-系统测试"
   },
   {
-    thumbContent: "未激活", extraText: "陈世明 负责", briefList: [
-      { className: "color-big-title text-xl font-bold", style: "", text: "宁波第三医院-系统测试" },
-      { className: "", style: "", text: "测试内容3" },
-      { className: "radius-2 w-1-2 color-green", style: "", text: "胃药机构" }
-    ]
+    thumbContent: "未激活", extraText: "陈世明 负责", mainTitle: "宁波第三医院-系统测试"
   },
 ]
 const itemsFree = [
@@ -60,7 +32,26 @@ const custCate = [itemsMine, itemsShare, itemsAll, itemsFree]
 Page({
   data: {
     tabs: [
-      "我负责的", "共享给我的", "全公司的", "无人负责的"
+      {
+        title: '我负责的',
+        subTitle: '',
+        number: '0',
+      },
+      {
+        title: '共享给我的',
+        subTitle: '',
+        number: '1',
+      },
+      {
+        title: '全公司的',
+        subTitle: '',
+        number: '2',
+      },
+      {
+        title: '无人负责的',
+        subTitle: '',
+        number: '3',
+      },
     ],
     activeIndex: 0,
     items: itemsMine,
@@ -88,4 +79,19 @@ Page({
       numClients
     })
   },
+  handleTabClick({ index, tabsName }) {
+    const items = custCate[index]
+    const numClients = items.length
+    this.setData({
+      [tabsName]: index,
+      items,
+      numClients
+    });
+  },
+  handleTabChange({ index, tabsName }) {
+    this.setData({
+      [tabsName]: index,
+    });
+  },
+
 });

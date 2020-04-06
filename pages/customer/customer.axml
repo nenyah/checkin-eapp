@@ -1,27 +1,29 @@
-<d-tabs texts="{{tabs}}" onDmItemTap="onItemTap" widthType="auto" disabled="{{false}}" activeIndex="{{activeIndex}}"></d-tabs>
+<d-tabs tabs="{{tabs}}" tabsName="activeIndex" onTabClick="handleTabClick" onChange="handleTabChange" activeTab="{{activeIndex}}" capsule="{{false}}" hasSubTitle="{{false}}"></d-tabs>
 <view class="flex items-center justify-center">
   <d-search-bar placeholder="搜索" class="w-5-6"></d-search-bar>
   <view>筛选</view>
 </view>
 <block a:if="{{numClients}}">
-  <view class="ml-5 h-10 flex items-center text-xl">
-  通讯录
-  </view>
-  <view class="ml-2">
+  <list>
+    <view slot="header" class="ml-5 h-10 flex items-center text-xl">
+				通讯录
+    </view>
+    <view class="ml-2">
   共{{numClients}}人
-  </view>
-  <block a:for="{{items}}">
-    <d-list-item thumbContent="{{item.thumbContent}}" extraText="{{item.extraText}}" briefList="{{item.briefList}}"></d-list-item>
-  </block>
-</block>
-<block a:else="{{numClients>0}}">
-  <view class="ml-5 h-10 flex items-center text-xl">
-  通讯录
-  </view>
-  <view class="ml-2">
-  共{{numClients}}人
-  </view>
-  <block a:for="{{items}}">
-    <d-list-item thumbContent="{{item.thumbContent}}" extraText="{{item.extraText}}" briefList="{{item.briefList}}"></d-list-item>
-  </block>
+    </view>
+    <block a:for="{{items}}">
+      <list-item onClick="onItemClick" upperSubtitle="{{item.mainTitle}}" class="">
+      {{item.mainTitle}}
+        <view slot="supporting" class="circle w-12 h-12 flex text-sm items-center justify-center" style="background-color:#c7e3fd;">
+        {{item.thumbContent}}
+        </view>
+        <view slot="afterLowerSubtitle" class="color-green p-1 text-xs radius-1 " style="background-color:#55d655;">
+      医药机构
+        </view>
+        <view slot="extra" class="color-label text-xs self-start">
+        {{item.extraText}}
+        </view>
+      </list-item>
+    </block>
+  </list>
 </block>
