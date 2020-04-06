@@ -1,2 +1,5 @@
 <d-tabs texts="{{tabs}}" onDmItemTap="onItemTap" widthType="auto" disabled="{{false}}" activeIndex="{{activeIndex}}"></d-tabs>
-<d-search-bar placeholder="搜索"></d-search-bar>
+<view class="flex items-center justify-center">
+  <d-search-bar placeholder="搜索" class="w-5-6"></d-search-bar>
+  <view>筛选</view>
+</view>
