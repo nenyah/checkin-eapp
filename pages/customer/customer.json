@@ -1,9 +1,9 @@
 {
     "usingComponents": {
         "s-tab-control": "/components/s-tab-control/s-tab-control",
-        "d-tabs": "dingui-mini/es/tabs/src/index",
-        "d-search-bar": "dingui-mini/es/search-bar/src/index",
-        "d-list-item": "dingui-mini/es/list-item/src/index"
+        "d-tabs": "mini-ali-ui/es/tabs/index",
+        "d-search-bar": "mini-ali-ui/es/search-bar/index",
+        "d-list-item": "mini-ali-ui/es/list/list-item/index"
     },
     "defaultTitle": "选择接收人"
 }
