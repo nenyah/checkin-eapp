@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/stats/stats"
+    "pages/stats/stats",
+    "pages/customer/customer"
   ],
   "window": {
     "defaultTitle": "华东宁波签到系统"

@@ -1,8 +1,7 @@
 {
-    "component": true,
     "usingComponents": {
         "s-header": "./check-header/check-header",
-        "s-map": "/component/map/map",
+        "s-map": "/components/s-map/s-map",
         "s-choose-person": "./choose-person/choose-person",
         "s-check": "./check-icon/check-icon"
     },

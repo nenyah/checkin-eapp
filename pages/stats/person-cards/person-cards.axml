@@ -20,6 +20,6 @@
     宁波市公安局北仑分局交通警察大队
     </view>
     <view class="color-label font-bold my-2">签到图片</view>
-    <image src="/assets/images/fake1.jpg" mode="aspectFill" class="w-32 h-32"/>
+    <image src="/assets/images/fake1.jpg" mode="aspectFill" class="w-16 h-16"/>
   </view>
 </view>
