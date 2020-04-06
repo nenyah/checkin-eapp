@@ -2,7 +2,8 @@
     "usingComponents": {
         "s-tab-control": "/components/s-tab-control/s-tab-control",
         "d-tabs": "dingui-mini/es/tabs/src/index",
-        "d-search-bar": "dingui-mini/es/search-bar/src/index"
+        "d-search-bar": "dingui-mini/es/search-bar/src/index",
+        "d-list-item": "dingui-mini/es/list-item/src/index"
     },
     "defaultTitle": "选择接收人"
 }

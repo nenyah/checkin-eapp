@@ -3,3 +3,25 @@
   <d-search-bar placeholder="搜索" class="w-5-6"></d-search-bar>
   <view>筛选</view>
 </view>
+<block a:if="{{numClients}}">
+  <view class="ml-5 h-10 flex items-center text-xl">
+  通讯录
+  </view>
+  <view class="ml-2">
+  共{{numClients}}人
+  </view>
+  <block a:for="{{items}}">
+    <d-list-item thumbContent="{{item.thumbContent}}" extraText="{{item.extraText}}" briefList="{{item.briefList}}"></d-list-item>
+  </block>
+</block>
+<block a:else="{{numClients>0}}">
+  <view class="ml-5 h-10 flex items-center text-xl">
+  通讯录
+  </view>
+  <view class="ml-2">
+  共{{numClients}}人
+  </view>
+  <block a:for="{{items}}">
+    <d-list-item thumbContent="{{item.thumbContent}}" extraText="{{item.extraText}}" briefList="{{item.briefList}}"></d-list-item>
+  </block>
+</block>
