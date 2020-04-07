@@ -1,3 +1,18 @@
-<view>
-  New Page
-</view>
+<list>
+  <list-item arrow="{{arrow}}">
+    {{title}}
+    <text slot="extra">{{extra}}</text>
+  </list-item>
+  <filter show="{{show}}" max="{{10}}" onChange="handleCallBack" onMaskTap="toggleFilter">
+    <block a:for="{{labels}}" a:for-item="item" a:for-index="key" >
+      <list>
+        <view slot="header" class="{{randomColor[key]}} font-bold text-lg">
+				{{item.cate}}
+        </view>
+        <view a:for="{{item.tag}}" a:for-item="tag">
+          <filter-item value="{{tag}}" id="{{tag.id}}" selected="{{tag.selected}}" key="filter-item-{{index}}" />
+        </view>
+      </list>
+    </block>
+  </filter>
+</list>

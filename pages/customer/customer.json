@@ -1,8 +1,8 @@
 {
     "usingComponents": {
         "s-tab-control": "/components/s-tab-control/s-tab-control",
-        "d-tabs": "mini-ali-ui/es/tabs/index",
-        "d-search-bar": "mini-ali-ui/es/search-bar/index",
+        "tabs": "mini-ali-ui/es/tabs/index",
+        "search-bar": "mini-ali-ui/es/search-bar/index",
         "list-item": "mini-ali-ui/es/list/list-item/index",
         "list": "mini-ali-ui/es/list/index"
     },

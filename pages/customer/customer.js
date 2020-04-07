@@ -56,7 +56,7 @@ Page({
     activeIndex: 0,
     items: itemsMine,
     numClients: 0,
-
+    hasContentHeight: false,
   },
   onLoad() {
     // console.log(custCate, this.data.activeIndex)

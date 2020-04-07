@@ -1,1 +1,9 @@
-{}
+{
+    "usingComponents": {
+        "list-item": "mini-ali-ui/es/list/list-item/index",
+        "list": "mini-ali-ui/es/list/index",
+        "filter": "mini-ali-ui/es/filter/index",
+        "filter-item": "mini-ali-ui/es/filter/filter-item/index"
+    },
+    "defaultTitle": "筛选"
+}
