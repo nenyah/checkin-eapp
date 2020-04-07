@@ -65,9 +65,11 @@ Page({
       numClients
     })
   },
-  methods: [
-
-  ],
+  goToCate(){
+    my.navigateTo({
+      url: '/pages/customer-cate/customer-cate'
+    });
+  },
   onItemTap(e) {
     console.log(e)
     const activeIndex = e
