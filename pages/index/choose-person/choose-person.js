@@ -5,5 +5,11 @@ Component({
   didMount() {},
   didUpdate() {},
   didUnmount() {},
-  methods: {},
+  methods: {
+    handleTap() {
+  	  my.navigateTo({
+        url: '/pages/customer/customer'
+      });
+    }, 
+  },
 });
